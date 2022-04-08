@@ -28,7 +28,7 @@
 if {[catch {source scripts/rss-synd-settings.tcl} err]} {
   putlog "Error: Could not load 'rss-synd-settings.tcl file.'";
 }
-
+namespace eval ::rss-synd { }
 proc ::rss-synd::init {args} {
 	variable rss
 	variable default
